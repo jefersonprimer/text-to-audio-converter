@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Speech Converter</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1><span>Text</span> to <span>Speech</span> Converter</h1>
+      <p>Enter text or send a file to be read:</p>
+      <div id="entrada-de-conteudo">
+        <textarea
+          placeholder="Type something..."
+          id="entrada-de-texto"
+        ></textarea>
+        <div>
+          <label for="upload-arquivo" id="arquivo-label">Send file</label>
+          <input type="file" id="upload-arquivo" accept=".txt" />
+        </div>
+      </div>
+      <div class="acoes">
+        <div class="acao-box">
+          <p>Select voice:</p>
+          <select id="selecao-voz"></select>
+        </div>
+        <div class="acao-box">
+          <p>Click to listen:</p>
+          <button id="ouvir-btn">To hear</button>
+        </div>
+        <div class="acao-box">
+          <p>Get an archive of the content:</p>
+          <button id="baixar-texto-btn">Download Text</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
